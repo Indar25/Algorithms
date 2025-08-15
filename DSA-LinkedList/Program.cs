@@ -31,7 +31,7 @@ internal class Program
         list2.next = new ListNode(4);
         list2.next.next = new ListNode(6);
 
-        var result = problem.MergeTwoLists(list1, list2);
+        var result = problem.MergeTwoLists11(list1, list2);
         Console.ReadKey();
     }
     public static ListNode CreateCyclicLinkedList()

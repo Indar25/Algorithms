@@ -10,10 +10,9 @@ public class LinkedListProblem
     {
         if (head == null)
             return false;
-        var temp = head;
 
         var slow = head;
-        var fast = temp;
+        var fast = head;
 
         while (fast != null && fast.next != null)
         {
@@ -58,20 +57,20 @@ public class LinkedListProblem
     *  https://leetcode.com/problems/reverse-linked-list/
     *  Reverse Linked List
     */
-    public ListNode ReverseList(ListNode head)
-    {
-        ListNode prev = null;
-        ListNode current = head;
-        while (current != null)
-        {
-            ListNode temp = current.next;
-            current.next = prev;
-            prev = current;
-            current = temp;
-        }
-        head = prev;
-        return head;
-    }
+    //public ListNode ReverseList(ListNode head)
+    //{
+    //    ListNode prev = null;
+    //    ListNode current = head;
+    //    while (current != null)
+    //    {
+    //        ListNode temp = current.next;
+    //        current.next = prev;
+    //        prev = current;
+    //        current = temp;
+    //    }
+    //    head = prev;
+    //    return head;
+    //}
     /*
      * https://leetcode.com/problems/add-two-numbers/
      * Add Two Numbers
